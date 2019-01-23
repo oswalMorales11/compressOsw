@@ -16,12 +16,13 @@ public class CompressProject {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-       String result = compress("AAABBAAAAABB");
+       String result = compress("{'value': 'AAABBAAAAABB'}");
         System.out.println("result es: "+result);
     }
 
     
     public static String compress(String input){
+
         StringBuilder sb = new StringBuilder();
         int i = 0;
         int limit = input.length() - 1;
@@ -50,3 +51,4 @@ public class CompressProject {
     
     
 }
+
